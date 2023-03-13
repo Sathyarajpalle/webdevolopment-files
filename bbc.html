@@ -1,0 +1,383 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Technology-BBC News</title>
+		<style type="text/css">
+			#topbar{
+				width: 1000px;
+				margin: 0 auto;
+				height: 40px;
+				
+			}
+			body{
+	          margin: 0px;
+	          padding: 0px;
+	          font-family: Helvetica,Arial,sans-serif;
+			}
+			#logo{
+				margin-top: 8px;
+				margin-left: 15px;
+				margin-bottom: 8px;
+				margin-right: 8px;
+				float: left;
+				width: 100px;
+			}
+			.top-section{
+				float: left;
+				border-left: 1px #CCCCCC solid;
+				height: 120%;
+
+
+			}
+			
+			.signin-image{
+				width: 40px;
+				margin-top: 0px;
+				margin-left: 6px;
+				margin-bottom: 8px;
+				margin-right: 8px;
+			}
+			.signin-text{
+				font-weight: bold;
+				font-size: 80%;
+				margin-left: -15px;
+				padding-right: 40px;
+				padding-bottom: 20px;
+				position: relative;
+				bottom: 25px;
+
+
+			}
+			.note{
+				float: left;
+				border-left: 1px #CCCCCC solid;
+				height: 120%;
+				padding-right: 8 px 9px;
+			}
+			.note-img{
+				width:20px;
+				margin-left: 5px;
+				margin-right: 5px;
+				margin-top: 8pm;
+				margin-bottom: 8px;
+				padding: 8px 9px;
+				
+			}
+			.topbar-menu{
+				font-weight: bold;
+				font-size: 88%;
+				padding: 13px 15px; 
+				height: 22px;
+
+			}
+			.more-logo{
+	         width: 13px;
+	         margin-left: 4px;
+			}
+			.search-box{
+				background-color: #ebebeb;
+				font-weight: bold;
+				border: none;
+				font-size: 88%;
+				padding: 5px;
+				margin: 5px 0 5px 40px;
+				float: left;
+
+			}
+			.search-image{
+				
+				height: 27px;
+				margin-top: 5px;
+
+			}
+			.clear{
+				clear: both;
+			}
+			.menu-bar-container{
+				width: 100%;
+				height: 70px;
+				background-color: #b80000;
+				margin: auto;
+			}
+			.menu-bar{
+				width:1000px;
+				margin:auto;
+			}
+			h1{
+				padding: 0;
+				margin: 0;
+	          padding-top: 10px;
+	          font-weight:normal ;
+	          font-size: 40px;
+	          color: white;
+	          float: left;
+	          padding-left: 10px;
+
+			}
+			.menubar-location{
+				border: 1px #BB4545 solid;
+				width: 240px;
+				float: right;
+				padding: 5px 5px 0 10px;
+				margin: 10x 10px 0 30px;
+				position: relative;
+	          right: 0px;
+	          top: 10px;
+			}
+			.menubar-location a{
+				color: white;
+				text-decoration: none;
+				font-size: 26px;
+				
+				}
+				.menubar-location a:hover{
+					text-decoration: underline;
+				}
+			.location-logo{
+				width: 25px;
+				padding-left: 20px;
+
+			}
+			.menubar-2-container{
+				width: 100%;
+				background-color: #A91717;
+			}
+			.menu-bar-2{
+				width: 1000px;
+				margin: auto;
+				height: 40px;
+			}
+			.menu-bar-2 a{
+				color: white;
+				text-decoration: none;
+				margin-top:5px ;
+	            padding:  10px;
+	            border-right: 1px #BB4545 solid ;
+	            font-size: 13px;
+	            position: relative;
+	            top: 10px;
+			}
+			.menu-bar-2 a:hover{
+				text-decoration: underline;
+			}
+			.no-border{
+				border: none !important;
+			}
+			.page-container{
+				width: 1000px;
+				margin: auto;
+			}
+			h2{padding-top: 20px;
+				padding-left: 5px;
+				font-weight: normal;
+				font-size: 30px;
+				border-bottom: 3px #b80000 solid ;
+				width: 150px;
+			}
+			h3 a{
+				color: black;
+				font-size: 30px;
+				text-decoration: none;
+			}
+			h3 a:hover{
+				color: #1167a8;
+			}
+	        .article-summary{
+	        	color: #5a5a5a;
+	        	width: 240px;
+	        	float: left;
+	        	position: relative;
+	        	bottom: 10px;
+	        	
+	        }
+	        .clock{
+	        	width: 13px;
+	        	margin-right:6px;
+	        }
+	        .tech-link{
+	        	text-decoration: none;
+	        	color:  #b80000;
+	        	border-left: 1px #CCCCCC solid;
+	        	padding-left: 6px;        	
+	        }
+	         .tech-link:hover{
+	        	color: #1167a8;
+	        }
+	        .article-container {
+	        	width: 670px;
+	        	float: left;
+	        	border-right: 1px #CCCCCC solid;
+	        	padding-bottom: 15px;
+	        	border-bottom: 1px #CCCCCC solid;
+	        }
+	        .asda-image{
+	        	padding-left: 15px;
+	        	width: 400px;
+	        	
+	        }
+	        
+	        .article-link{
+	        	text-decoration: none;
+	        	color: black;
+	        	
+	        }
+	        .article-link:hover{
+	        	color: #1167a8;
+	        }
+	        .watch-listen{
+	        	 margin-left: 20px;
+	        	 width: 300px;
+	        	 float: right;
+	        	 position: relative;
+	        	 bottom: 510px;
+	        }
+	        h4{
+	        	font-weight: normal;
+	        	font-size: 20px;
+	        }
+	        .article-side-images{
+	        	float: left;
+	        	width: 140px;
+	        	margin-right: 10px ;
+	        }
+	         .watch-listen-link{
+	         	text-decoration: none;
+	         	color: black;
+	         	font-weight: bold;
+
+	         }
+	         .watch-listen-link:hover{
+	         	color: #1167a8;
+	         }
+	         .sec-article{
+	         	width: 600px;
+	         	margin: 0 auto;
+	         	float: left;
+
+	         }
+	         .Sport{
+	         	color: black;
+	         	font-size: 30px;
+	         	text-decoration: none;
+	         	padding-left: 5px;
+	         	border-bottom: 3px #b80000 solid ;
+	         }
+	         .sport-heading{
+	         	color: black;
+	         	font-weight: bold;
+	         	font-size: 30px;
+	         	text-decoration: none;
+	         }
+	         .sport-heading:hover{
+	         	color: #1167a8;
+	         }
+	        
+		</style>
+	</head>
+	<body>
+	 <div id="topbar">
+	 	<img id="logo" src="C:\Users\sathy\OneDrive\Desktop\web devoloper course\images bbc\9f7cea3486caf94e8abf397aea578575.png">
+	 	<div id="signin-div" class="top-section">
+	 		<img class="signin-image" src="C:\Users\sathy\OneDrive\Desktop\web devoloper course\images bbc\pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.jpg">
+	 		<span class="signin-text">Sign in</span>
+	 	</div>
+	 	<div class="note">
+	 		<img class="note-img" src="C:\Users\sathy\OneDrive\Desktop\web devoloper course\images bbc\151-1511463_blueberry-tab-bar-notification-notification-icon-png-transparent.png" >
+	 		
+	 	</div>
+	 	<div class="top-section topbar-menu">
+	 		News
+	 	</div>
+	 	<div class="top-section topbar-menu">
+	 		Sport
+	 	</div>
+	 	<div class="top-section topbar-menu">
+	 		Weather
+	 	</div>
+	 	<div class="top-section topbar-menu">
+	 		iPlayer
+	 	</div>
+	 	<div class="top-section topbar-menu">
+	 		TV
+	 	</div>
+	 	<div class="top-section topbar-menu">
+	 		More
+	 		<img class="more-logo" src="C:\Users\sathy\OneDrive\Desktop\web devoloper course\images bbc\down-arrow-icon-sign-symbol-logo-vector.jpg">
+	 	</div>
+	 	<div class="top-section"> 
+	 		<input type="text" class="search-box" placeholder="Search">
+	 		<input type="image" class="search-image" src="C:\Users\sathy\OneDrive\Desktop\web devoloper course\images bbc\search logo.png">
+	 	</div>
+	 </div>
+	 <div class="clear"></div>
+	 <div class="menu-bar-container">
+	 	<div class="menu-bar">
+	 		<h1> NEWS</h1>
+	 	<div class=" menubar-location">
+	 		<a href="">Find local news</a>
+	 		<img class="location-logo"src="C:\Users\sathy\OneDrive\Desktop\web devoloper course\images bbc\location-icon-white-png-10.jpg">
+	 	</div>
+	  </div>
+	  <div class="clear"></div>
+	  <div class="menubar-2-container">
+	  	<div class="menu-bar-2">
+	  		<a href="">Home</a>
+	  		<a href="">UK</a>
+	  		<a href="">World</a>
+	  		<a href="">Business</a>
+	  		<a href="">Politics</a>
+	  		<a href="">Tech</a>
+	  		<a href="">Science</a>
+	  		<a href="">Health</a>
+	  		<a href="">Education</a>
+	  		<a href="">Tech</a>
+	  		<a href="">Entertainment & arts</a>
+	  		<a href="">Video & Audio</a>
+	  		<a href="" class="no-border">More</a>  		
+	  	</div>
+	  </div>
+	 </div>
+	<div class="clear"></div>
+	<div class="page-container">
+		<div class="main-article">
+			<h2>Technology</h2>
+			<div class="article-container">
+			<h3><a href="">Asda bug exposed payment details</a></h3>
+		      <div class="article-summary">
+		    	<p>"Secuirity vulnarabilities that put customers at risk havre affected Asda's website for a couple of yesars,a Secuirity expert has revealed"</p>
+		    	<p><img class="clock" src="C:\Users\sathy\OneDrive\Desktop\web devoloper course\images bbc\clock22.jpg">19 January 2016 <span><a class="tech-link" href="">Technology</a></span></p>
+		    	<p><a class="article-link" href="">Survillience firm hit in hack attack</a></p>
+		    	<p><a class="article-link" href="">eBay flaw has existed for months</a></p>
+		       </div>
+		    	<img class="asda-image" src="C:\Users\sathy\OneDrive\Desktop\web devoloper course\images bbc\asda.jfif">
+		    	
+		    </div>
+		
+	    </div>
+	   <div class="sec-article">
+	    	<p><a class="Sport" href="">Sports</a>
+	    	<P><a class="sport-heading" href="">Argentina's shocking defeat to Saudi Arabia</a></P>
+	    </div>
+	    <div class="clear"></div>
+	    <div class="watch-listen">
+	    	<h4>Watch/Listen</h4>
+	    	<img class="article-side-images" src="C:\Users\sathy\OneDrive\Desktop\web devoloper course\images bbc\video clip 1.png">
+	    	<p><a class="watch-listen-link" href="">UK science chief backs blockchains</a></p>
+	    	<p><img class="clock" src="C:\Users\sathy\OneDrive\Desktop\web devoloper course\images bbc\clock22.jpg">19 January 2016</p>
+	    	<img class="article-side-images" src="C:\Users\sathy\OneDrive\Desktop\web devoloper course\images bbc\video clip 2.png">
+	    	<p><a class="watch-listen-link" href="">Moment teeside blast furnace was demolished</a></p>
+	    	<p><img class="clock" src="C:\Users\sathy\OneDrive\Desktop\web devoloper course\images bbc\clock22.jpg">19 January 2016 </p>
+	    	<img class="article-side-images" src="C:\Users\sathy\OneDrive\Desktop\web devoloper course\images bbc\video clip 3.png">
+	    	<p><a class="watch-listen-link" href="">Richard Hammod reveals top gear crash coma dream</a></p>
+	    	<p><img class="clock" src="C:\Users\sathy\OneDrive\Desktop\web devoloper course\images bbc\clock22.jpg">19 January 2016 </p>
+	    	<img class="article-side-images" src="C:\Users\sathy\OneDrive\Desktop\web devoloper course\images bbc\video clip 5.png">
+	    	<p><a class="watch-listen-link" href="">Fans miss kick-off after Fifa ticket app issues</a></p>
+	    	<p><img class="clock" src="C:\Users\sathy\OneDrive\Desktop\web devoloper course\images bbc\clock22.jpg">19 January 2016 </p>
+
+	    </div>
+	    <div class="clear"></div>
+	 </div>
+	</body>
+	</html>

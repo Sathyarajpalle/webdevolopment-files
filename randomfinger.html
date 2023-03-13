@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>js4</title>
+</head>
+<body>
+	<p> How many fingers am I holding up??</p>
+	<p><input type="text" id="magicword"></p>
+	<button id="magicbutton">enter</button>
+<script type="text/javascript">
+	document.getElementById("magicbutton").onclick = function(){
+		var num = document.getElementById("magicword").value;
+		if(num == Math.floor(Math.random()*5)){
+			alert("OHHHH!! You got it");
+		}
+		else{
+			alert("wrong answer");
+		}
+	}
+</script>
+</body>
+</html>
